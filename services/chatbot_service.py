@@ -78,7 +78,7 @@ def format_tabs(response: str, max_length: int = 40) -> str:
             cleaned_line = stripped_line.replace("| ", "|")  
             tab_block.append(cleaned_line if len(cleaned_line) <= max_length else split_line(cleaned_line))
         else:
-
+            # If a tab block exists, flush it
             if tab_block:
                 formatted_lines.extend(tab_block)
                 tab_block = []
