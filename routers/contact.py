@@ -4,7 +4,6 @@ from services.email_service import send_email
 
 router = APIRouter()
 
-# Define the Pydantic model for request validation
 class ContactRequest(BaseModel):
     name: str
     email: EmailStr
@@ -19,7 +18,6 @@ async def contact_form(contact_request: ContactRequest):
         contact_request (ContactRequest): The validated contact form data.
     """
     try:
-        # Send the email using the email service
         send_email(
             name=contact_request.name,
             email=contact_request.email,

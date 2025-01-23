@@ -23,35 +23,6 @@ def truncate_conversation(max_messages=5):
         conversation_history = [conversation_history[0]] + conversation_history[-(max_messages - 1):]
 
 
-# def format_tabs(response: str) -> str:
-#     """
-#     Formats guitar or bass tabs for small chat bubbles.
-
-#     Args:
-#         response (str): The raw response containing potential tabs.
-
-#     Returns:
-#         str: The formatted response with properly displayed tabs.
-#     """
-#     lines = response.split("\n")
-#     formatted_lines = []
-    
-#     for line in lines:
-#         # Identify tab lines based on string notation (e.g., e|, B|, G|, etc.)
-#         if line.strip() and any(line.startswith(s + "|") for s in "eBGDAE"):
-#             # Split long tab lines for better readability
-#             if len(line) > 40:
-#                 formatted_lines.append(line[:40] + " \\n " + line[40:])
-#             else:
-#                 formatted_lines.append(line)
-#         else:
-#             # Non-tab lines (explanatory text) remain unchanged
-#             formatted_lines.append(line)
-
-#     return "```\n" + "\n".join(formatted_lines) + "\n```"
-        
-
-
 def format_tabs(response: str, max_length: int = 40) -> str:
     """
     Formats guitar or bass tabs for small chat bubbles.
