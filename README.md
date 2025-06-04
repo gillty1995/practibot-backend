@@ -3,7 +3,7 @@
 Practibot is a chatbot designed to assist users in improving their music practice routines. It offers personalized tips, tablature formatting, and engaging conversational capabilities, powered by OpenAI’s GPT-4. This project is hosted on AWS and represents my journey of learning Python, with the help of ChatGPT and documentation, to build a functional and interactive tool.
 
 **Links**
-• Deployed Website: https://practibot.hec.to/
+• Deployed Website: https://practibot.mine.bz/
 • Frontend Repository: https://github.com/gillty1995/practibot-frontend
 
 **Key Features**

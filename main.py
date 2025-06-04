@@ -13,9 +13,9 @@ ENV = os.getenv("ENV", "development")
 
 if ENV == "production":
     allowed_origins = [
-        "https://practibot.hec.to",
-        "https://api.practibot.hec.to",
-        "https://www.practibot.hec.to"
+        "https://practibot.mine.bz",
+        "https://api.practibot.mine.bz",
+        "https://www.practibot.mine.bz"
     ]
 else:
     allowed_origins = [
